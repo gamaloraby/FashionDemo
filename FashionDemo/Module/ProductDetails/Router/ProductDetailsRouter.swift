@@ -21,7 +21,7 @@ class ProductDetailsRouter: ProductDetailsRouterProtocol {
     
     weak var viewController: UIViewController?
     
-    static func createModule(data: ProductDetailsViewData?) -> UIViewController {
+    static func createModule(data: Item?) -> UIViewController {
         let viewController = ProductDetailsViewController()
         let router = ProductDetailsRouter()
         router.viewController = viewController

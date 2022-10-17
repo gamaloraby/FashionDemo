@@ -61,8 +61,7 @@ class HomeModulePresenter: HomeModulePresenterProtocol {
     }
     
     func openDetails(index: Int) {
-        guard let viewData = data else {return}
-        router?.navigateTo(.details(product: viewData[index]))
+        router?.navigateTo(.details(product: storedData[index]))
     }
     
     func getTotalProductsCount() -> Int {

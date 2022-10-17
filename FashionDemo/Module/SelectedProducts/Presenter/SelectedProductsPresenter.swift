@@ -49,6 +49,7 @@ class SelectedProductsPresenter:  SelectedProductsPresenterProtocol {
         let manager = DataManager()
         guard let data = viewData else {return}
         manager.createEntity(entityName: "Item", product: data.products[index])
+        view?.didProdctAdded()
     }
 }
 

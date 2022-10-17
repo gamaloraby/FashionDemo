@@ -13,7 +13,7 @@ class ProductDetailsPresenter: ProductDetailsPresenterProtocol {
     var interactor: ProductDetailsInteractorProtocol?
     weak var view: ProductDetailsPresenterOutputProtocol?
     var router: ProductDetailsRouterProtocol?
-    var viewData: ProductDetailsViewData?
+    var viewData: Item?
     
     init(view: ProductDetailsPresenterOutputProtocol, router: ProductDetailsRouterProtocol) {
         self.view = view
@@ -22,7 +22,7 @@ class ProductDetailsPresenter: ProductDetailsPresenterProtocol {
     
     func viewDidLoad() {
         guard let data = viewData else {return}
-        view?.updateViewData(data: data.product)
+        view?.updateViewData(data: data)
     }
     
     func viewWillAppear() {

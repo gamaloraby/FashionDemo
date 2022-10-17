@@ -15,7 +15,7 @@ protocol HomeModuleRouterProtocol {
 class HomeModuleRouter: HomeModuleRouterProtocol {
     enum HomeModuleRoute {
         case productsList(data: HomeResponseModel)
-        case details(product: Product)
+        case details(product: Item)
     }
 
     typealias DataType = HomeModuleViewData
@@ -57,9 +57,9 @@ class HomeModuleRouter: HomeModuleRouterProtocol {
         self.viewController?.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    private func navigateToProductsDetails(data: Product) {
+    private func navigateToProductsDetails(data: Item) {
         let viewData = ProductDetailsViewData(product: data)
-        let viewController = ProductDetailsRouter.createModule(data: viewData)
+        let viewController = ProductDetailsRouter.createModule(data: viewData.product)
         self.viewController?.navigationController?.pushViewController(viewController, animated: true)
     }
 }

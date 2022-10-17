@@ -25,5 +25,5 @@ protocol SelectedProductsPresenterProtocol: AnyObject {
 
 /// Defines the presenter callbacks to view
 protocol SelectedProductsPresenterOutputProtocol: AnyObject {
-    
+    func didProdctAdded()
 }

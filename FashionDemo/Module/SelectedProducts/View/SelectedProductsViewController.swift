@@ -84,5 +84,9 @@ extension SelectedProductsViewController: CellDelegate {
     }
 }
 extension SelectedProductsViewController: SelectedProductsPresenterOutputProtocol {
-    
+    func didProdctAdded() {
+        let alert = UIAlertController(title: "", message: "Item added. add anothe one", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

@@ -19,5 +19,5 @@ protocol ProductDetailsPresenterProtocol: AnyObject {
 }
 
 protocol ProductDetailsPresenterOutputProtocol: AnyObject {
-    func updateViewData(data: Product)
+    func updateViewData(data: Item)
 }

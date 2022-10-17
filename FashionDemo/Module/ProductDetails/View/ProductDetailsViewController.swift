@@ -59,10 +59,11 @@ class ProductDetailsViewController: UIViewController {
 }
 
 extension ProductDetailsViewController: ProductDetailsPresenterOutputProtocol {
-    func updateViewData(data: Product) {
+    func updateViewData(data: Item) {
         self.name.text = data.name
-        self.productDescription.text = data.welcomeDescription
-        guard let url = URL(string: data.imageURL) else {return}
+        self.productDescription.text = data.descriptionText
+        guard let url = URL(string: data.image ?? "") else {return}
         image.load(url: url)
+        price.text = "\(data.retailPrice)"
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 struct ProductDetailsViewData {
-    var product: Product
+    var product: Item
 }
