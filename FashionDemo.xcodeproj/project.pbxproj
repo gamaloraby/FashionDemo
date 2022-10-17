@@ -55,11 +55,11 @@
 		DC3F524228FADFDF006F3AB7 /* ProductDetailsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F523528FADFDF006F3AB7 /* ProductDetailsViewData.swift */; };
 		DC3F524328FADFDF006F3AB7 /* ProductDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F523728FADFDF006F3AB7 /* ProductDetailsRouter.swift */; };
 		DC3F524728FAE3ED006F3AB7 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F524628FAE3ED006F3AB7 /* HomeServices.swift */; };
-		DC3F524A28FAE456006F3AB7 /* HomeRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F524928FAE456006F3AB7 /* HomeRequestModel.swift */; };
 		DC3F524D28FAE473006F3AB7 /* HomeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F524C28FAE473006F3AB7 /* HomeResponseModel.swift */; };
 		DC68FCF028FB5287004954A3 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68FCEE28FB5287004954A3 /* ProductCell.swift */; };
 		DC68FCF128FB5287004954A3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC68FCEF28FB5287004954A3 /* ProductCell.xib */; };
 		DC68FCF528FB56BA004954A3 /* UIimage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68FCF428FB56BA004954A3 /* UIimage+Extensions.swift */; };
+		DC7D787D28FD75D500CF66AF /* NetWorkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D787C28FD75D500CF66AF /* NetWorkConfig.swift */; };
 		DC7E2FBA28FB65F6001836F6 /* ProductToSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7E2FB828FB65F6001836F6 /* ProductToSelectCell.swift */; };
 		DC7E2FBB28FB65F6001836F6 /* ProductToSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7E2FB928FB65F6001836F6 /* ProductToSelectCell.xib */; };
 		DCE9514528FBD006008EB692 /* NetWorkManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9514428FBD006008EB692 /* NetWorkManage.swift */; };
@@ -140,11 +140,11 @@
 		DC3F523528FADFDF006F3AB7 /* ProductDetailsViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewData.swift; sourceTree = "<group>"; };
 		DC3F523728FADFDF006F3AB7 /* ProductDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsRouter.swift; sourceTree = "<group>"; };
 		DC3F524628FAE3ED006F3AB7 /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
-		DC3F524928FAE456006F3AB7 /* HomeRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequestModel.swift; sourceTree = "<group>"; };
 		DC3F524C28FAE473006F3AB7 /* HomeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModel.swift; sourceTree = "<group>"; };
 		DC68FCEE28FB5287004954A3 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		DC68FCEF28FB5287004954A3 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		DC68FCF428FB56BA004954A3 /* UIimage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Extensions.swift"; sourceTree = "<group>"; };
+		DC7D787C28FD75D500CF66AF /* NetWorkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkConfig.swift; sourceTree = "<group>"; };
 		DC7E2FB828FB65F6001836F6 /* ProductToSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductToSelectCell.swift; sourceTree = "<group>"; };
 		DC7E2FB928FB65F6001836F6 /* ProductToSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductToSelectCell.xib; sourceTree = "<group>"; };
 		DCE9514428FBD006008EB692 /* NetWorkManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManage.swift; sourceTree = "<group>"; };
@@ -619,7 +619,6 @@
 		DC3F524828FAE444006F3AB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DC3F524928FAE456006F3AB7 /* HomeRequestModel.swift */,
 				DC3F524C28FAE473006F3AB7 /* HomeResponseModel.swift */,
 			);
 			path = Model;
@@ -674,6 +673,7 @@
 			isa = PBXGroup;
 			children = (
 				DCE9514428FBD006008EB692 /* NetWorkManage.swift */,
+				DC7D787C28FD75D500CF66AF /* NetWorkConfig.swift */,
 			);
 			path = NetWorkManager;
 			sourceTree = "<group>";
@@ -957,6 +957,7 @@
 				DC7E2FBA28FB65F6001836F6 /* ProductToSelectCell.swift in Sources */,
 				DC3F521228FADF96006F3AB7 /* SelectedProductsPresenterProtocol.swift in Sources */,
 				DC3F521A28FADF96006F3AB7 /* SelectedProductsInteractorProtocol.swift in Sources */,
+				DC7D787D28FD75D500CF66AF /* NetWorkConfig.swift in Sources */,
 				DC3F521428FADF96006F3AB7 /* SelectedProductsViewController.swift in Sources */,
 				DC3F523F28FADFDF006F3AB7 /* ProductDetailsRemoteWorker.swift in Sources */,
 				DC3F51EB28FADF34006F3AB7 /* HomeModulePresenterProtocol.swift in Sources */,
@@ -966,7 +967,6 @@
 				DC3F519B28FADE63006F3AB7 /* AppDelegate.swift in Sources */,
 				DC3F524728FAE3ED006F3AB7 /* HomeServices.swift in Sources */,
 				DC3F519D28FADE63006F3AB7 /* SceneDelegate.swift in Sources */,
-				DC3F524A28FAE456006F3AB7 /* HomeRequestModel.swift in Sources */,
 				DC3F51EF28FADF34006F3AB7 /* HomeModuleRemoteWorkerProtocols.swift in Sources */,
 				DC3F521728FADF96006F3AB7 /* SelectedProductsLocalWorker.swift in Sources */,
 				DC68FCF028FB5287004954A3 /* ProductCell.swift in Sources */,

@@ -14,7 +14,8 @@ enum Services {
 
 // MARK: - TargetType Protocol Implementation
 extension Services: TargetType {
-     var baseURL: URL { URL(string: "https://run.mocky.io/v3")! }
+    // var baseURL: URL { URL(string: "https://run.mocky.io/v3")! }
+    var baseURL: URL { URL(string: NetWorkConfig.baseURL)! }
      var path: String {
         switch self {
         case .getProducts:

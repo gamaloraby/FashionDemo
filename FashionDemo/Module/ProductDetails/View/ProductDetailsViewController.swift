@@ -29,7 +29,6 @@ class ProductDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         presenter?.viewDidLoad()
     }
     
@@ -51,11 +50,6 @@ class ProductDetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         
     }
-    
-    private func setupUI() {
-       
-    }
-    
 }
 
 extension ProductDetailsViewController: ProductDetailsPresenterOutputProtocol {
